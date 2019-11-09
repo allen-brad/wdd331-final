@@ -36,11 +36,13 @@
         font-size: 2em;
       }
       .preamble {
-        background: url(mountains400.jpg) no-repeat top left;
+        background: url(mountains400.jpg) no-repeat;
+        background-size: cover;
         padding-top: 123px;
       }
       .benefits {
-        background: url(building400.jpg) no-repeat top left;
+        background: url(building400.jpg) no-repeat;
+        background-size: cover;
         padding-top: 123px;
         margin-top: 20px;
       }

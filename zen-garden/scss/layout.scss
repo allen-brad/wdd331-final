@@ -1,6 +1,6 @@
 $color-1: white;
 $color-2: gray;
-$background-color-1: #f9f8f8;
+$background-color-1: #E8E8E8;
 $background-color-2: blue;
 
 .page-wrapper {
@@ -59,9 +59,8 @@ h2 {
 	font-size: 2em;
 }
 .preamble {
-	background-image: url(#);
-	padding-top: 240px;
-	margin-bottom: 100px;
+	background: url(mountains400.jpg) no-repeat top left;
+	padding-top: 123px;
 	h3 {
 		font-size: 2.5em;
 		padding-bottom: 30px;
@@ -81,9 +80,9 @@ h2 {
 	}
 }
 .benefits {
-	background-image: url(#);
-	padding-top: 240px;
-	margin-bottom: 100px;
+	background: url(building400.jpg) no-repeat top left;
+	padding-top: 123px;
+	margin-top: 20px;
 	h3 {
 		display: table;
 		background-color: $background-color-2;
@@ -95,7 +94,6 @@ h2 {
 		font-size: 1.6em;
 		margin: 0;
 		padding-bottom: 30px;
-		padding-bottom: 160px;
 	}
 }
 abbr {
@@ -106,9 +104,9 @@ abbr {
 	padding-right: 40px;
 }
 .participation {
-	background-image: url(#);
-	padding-top: 100px;
-	margin-bottom: 100px;
+	background: url(jellyfish320.jpg) no-repeat top left;
+	padding-top: 193px;
+	margin-top: 15px;
 	h3 {
 		display: table;
 		background-color: $background-color-2;
@@ -137,6 +135,9 @@ abbr {
 	}
 }
 .requirements {
+  background: url(skyscraper320.jpg) no-repeat top left;
+	padding-top: 193px;
+	margin-top: 15px;
 	h3 {
 		display: table;
 		background-color: $background-color-2;
@@ -159,21 +160,28 @@ footer {
 	.page-wrapper {
 		max-width: 1440px;
 	}
-	.explanation {
+	.preamble {
+		background: url(mountains1440.jpg) no-repeat top left;
+		padding-top: 426px;
+		margin-top: 20px;
+	}
+	.benefits {
+		background: url(building1440.jpg) no-repeat top left;
+		padding-top: 426px;
+		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
+		p {
+			padding-bottom: 160px;
+		}
 		h3 {
 			column-span: all;
 		}
 	}
 	.participation {
-		column-count: 2;
-		column-gap: 24px;
-		h3 {
-			column-span: all;
-		}
-	}
-	.benefits {
+		background: url(jellyfish1320.jpg) no-repeat top left;
+		padding-top: 773px;
+		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
 		h3 {
@@ -181,6 +189,9 @@ footer {
 		}
 	}
 	.requirements {
+		background: url(skyscraper1320.jpg) no-repeat top left;
+		padding-top: 773px;
+		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
 		h3 {
@@ -191,6 +202,13 @@ footer {
 				margin-top: 50px;
 				column-span: all;
 			}
+		}
+	}
+	.explanation {
+		column-count: 2;
+		column-gap: 24px;
+		h3 {
+			column-span: all;
 		}
 	}
 	.main {
