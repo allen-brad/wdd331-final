@@ -13,7 +13,7 @@
       }
       .intro,
       .sidebar {
-        background-color: #f9f8f8;
+        background-color: #CDCDCD;
         padding: 0 20px 20px 40px;
       }
       header h1 {
@@ -36,14 +36,13 @@
         font-size: 2em;
       }
       .preamble {
-        background-image: url(mountains.jpg);
-        padding-top: 240px;
-        margin-bottom: 100px;
+        background: url(mountains400.jpg) no-repeat top left;
+        padding-top: 123px;
       }
       .benefits {
-        background-image: url(building.jpg);
-        padding-top: 240px;
-        margin-bottom: 100px;
+        background: url(building400.jpg) no-repeat top left;
+        padding-top: 123px;
+        margin-top: 20px;
       }
       .preamble h3,
       .sidebar h3 {
@@ -77,9 +76,14 @@
         padding-right: 40px;
       }
       .participation {
-        background-image: url(jellyfish.jpg);
-        padding-top: 100px;
-        margin-bottom: 100px;
+        background: url(jellyfish320.jpg) no-repeat top left;
+        padding-top: 193px;
+        margin-top: 15px;
+      }
+      .requirements {
+        background: url(skyscraper320.jpg) no-repeat top left;
+        padding-top: 193px;
+        margin-top: 15px;
       }
       .explanation h3,
       .participation h3,
@@ -99,9 +103,7 @@
         margin: 0;
         padding-bottom: 30px;
       }
-      .benefits p {
-        padding-bottom: 160px;
-      }
+     
       .sidebar h3 {
         margin-bottom: 0;
       }
@@ -120,7 +122,29 @@
         .page-wrapper {
           max-width:1440px;
         }
-      
+        .preamble {
+            background: url(mountains1440.jpg) no-repeat top left;
+            padding-top: 426px;
+            margin-top: 20px;
+          }
+          .benefits {
+            background: url(building1440.jpg) no-repeat top left;
+            padding-top: 426px;
+            margin-top: 20px;
+          }
+          .participation {
+            background: url(jellyfish1320.jpg) no-repeat top left;
+            padding-top: 773px;
+            margin-top: 20px;
+          }
+          .requirements {
+            background: url(skyscraper1320.jpg) no-repeat top left;
+            padding-top: 773px;
+            margin-top: 20px;
+          }
+          .benefits p {
+            padding-bottom: 160px;
+          }
         .explanation,
         .participation,
         .benefits,
