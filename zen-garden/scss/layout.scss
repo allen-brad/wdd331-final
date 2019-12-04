@@ -1,37 +1,50 @@
-$color-1: white;
-$color-2: gray;
-$background-color-1: #E8E8E8;
-$background-color-2: blue;
+$color_1: white;
+$color_2: gray;
+$background_color_1: #E8E8E8;
+$background_color_2: blue;
 
-.page-wrapper {
+body {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 400px;
+	position: relative;
 }
+
+.page-wrapper {
+	flex: 1 0 auto;
+	max-width: 375px;
+}
+
 .intro {
-	background-color: $background-color-1;
+	background-color: $background_color_1;
 	padding: 0 20px 20px 40px;
 }
+
 .sidebar {
-	background-color: $background-color-1;
+	background-color: $background_color_1;
 	padding: 0 20px 20px 40px;
+	margin-bottom: 40px;
+
 	h3 {
 		font-size: 2.5em;
 		margin-bottom: 0;
 	}
+
 	.design-selection {
-		padding-left: 30px;
+		padding-left: 20px;
 		border-left: 3px solid blue;
 	}
+
 	.design-archives {
-		padding-left: 30px;
+		padding-left: 20px;
 		border-left: 3px solid blue;
 	}
+
 	.zen-resources {
-		padding-left: 30px;
+		padding-left: 20px;
 		border-left: 3px solid blue;
 	}
+
 	ul {
 		list-style-type: none;
 		padding: 0;
@@ -39,6 +52,7 @@ $background-color-2: blue;
 		margin-top: 10px;
 	}
 }
+
 header {
 	h1 {
 		font-size: 6em;
@@ -46,188 +60,260 @@ header {
 		margin-top: 20px;
 	}
 }
+
 h2 {
 	font-size: 3em;
 	margin-top: 0;
+
 	abbr {
-		color: $color-1;
-		background-color: $background-color-2;
+		color: $color_1;
+		background: blue;
 	}
 }
+
 .summary {
-	color: $color-2;
+	color: $color_2;
 	font-size: 2em;
 }
+
 .preamble {
 	background: url(mountains400.jpg) no-repeat top left;
 	padding-top: 123px;
+	margin-left: -40px;
+	margin-right: -40px;
+
 	h3 {
 		font-size: 2.5em;
-		padding-bottom: 30px;
+		padding-right: 10px;
+		padding-bottom: 20px;
 		margin: 0;
-		padding-left: 30px;
+		padding-left: 20px;
 		border-left: 3px solid blue;
 	}
+
 	p {
-		font-size: 1.8em;
-		padding-bottom: 30px;
+		font-size: 1.7em;
+		padding-right: 10px;
+		padding-bottom: 20px;
 		margin: 0;
-		padding-left: 30px;
+		padding-left: 20px;
 		border-left: 3px solid blue;
+
 		&:last-child {
 			padding-bottom: 0;
 		}
 	}
 }
+
 .benefits {
 	background: url(building400.jpg) no-repeat top left;
 	padding-top: 123px;
 	margin-top: 20px;
+	margin-left: -40px;
+	margin-right: -40px;
+
 	h3 {
+		margin-left: 40px;
+		margin-right: 40px;
 		display: table;
-		background-color: $background-color-2;
-		color: $color-1;
+		background-color: $background_color_2;
+		color: $color_1;
 		padding: 20px;
 		font-size: 2.3em;
 	}
+
 	p {
+		margin-left: 40px;
+		margin-right: 40px;
 		font-size: 1.6em;
-		margin: 0;
 		padding-bottom: 30px;
 	}
 }
+
 abbr {
 	text-decoration: none;
 }
+
 .main {
 	padding-left: 40px;
 	padding-right: 40px;
 }
+
 .participation {
-	background: url(jellyfish320.jpg) no-repeat top left;
+	background: url(jellyfish320.jpg) no-repeat top center;
 	padding-top: 193px;
 	margin-top: 15px;
+
 	h3 {
 		display: table;
-		background-color: $background-color-2;
-		color: $color-1;
+		background-color: $background_color_2;
+		color: $color_1;
 		padding: 20px;
 		font-size: 2.3em;
 	}
+
 	p {
 		font-size: 1.6em;
-		margin: 0;
 		padding-bottom: 30px;
 	}
 }
+
+.requirements {
+	background: url(skyscraper320.jpg) no-repeat top center;
+	padding-top: 193px;
+	margin-top: 15px;
+
+	h3 {
+		display: table;
+		background-color: $background_color_2;
+		color: $color_1;
+		padding: 20px;
+		font-size: 2.3em;
+	}
+
+	p {
+		font-size: 1.6em;
+		padding-bottom: 30px;
+	}
+}
+
 .explanation {
 	h3 {
 		display: table;
-		background-color: $background-color-2;
-		color: $color-1;
+		background-color: $background_color_2;
+		color: $color_1;
 		padding: 20px;
 		font-size: 2.3em;
 	}
+
 	p {
 		font-size: 1.6em;
-		margin: 0;
 		padding-bottom: 30px;
 	}
 }
-.requirements {
-  background: url(skyscraper320.jpg) no-repeat top left;
-	padding-top: 193px;
-	margin-top: 15px;
-	h3 {
-		display: table;
-		background-color: $background-color-2;
-		color: $color-1;
-		padding: 20px;
-		font-size: 2.3em;
-	}
-	p {
-		font-size: 1.6em;
-		margin: 0;
-		padding-bottom: 30px;
-	}
-}
+
 footer {
-	font-size: 1.6em;
+	background-color: $background_color_2;
+	position: absolute;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	margin-left: -40px;
+	padding: 15px 0 15px 50px;
+	bottom: 0;
+	width: 325px;
+
+	a {
+		color: $color_1;
+		font-size: 1.6em;
+		text-decoration: none;
+		margin-left: -40px;
+	}
 }
+
 @media only screen and (min-width: 48em) {
 	.page-wrapper {
 		max-width: 1440px;
 	}
+
 	.preamble {
 		background: url(mountains1440.jpg) no-repeat top left;
 		padding-top: 426px;
 		margin-top: 20px;
+		margin-left: -60px;
+		margin-right: -60px;
+
+		h3 {
+			margin-left: 60px;
+			margin-right: 60px;
+		}
+
+		p {
+			margin-left: 60px;
+			margin-right: 60px;
+		}
 	}
+
 	.benefits {
 		background: url(building1440.jpg) no-repeat top left;
 		padding-top: 426px;
 		margin-top: 20px;
+		margin-left: -60px;
+		margin-right: -60px;
 		column-count: 2;
 		column-gap: 24px;
+
 		p {
 			padding-bottom: 160px;
+			margin-left: 60px;
+			margin-right: 60px;
 		}
+
 		h3 {
+			margin-left: 60px;
+			margin-right: 60px;
 			column-span: all;
 		}
 	}
+
 	.participation {
-		background: url(jellyfish1320.jpg) no-repeat top left;
+		background: url(jellyfish1320.jpg) no-repeat top center;
 		padding-top: 773px;
 		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
+
 		h3 {
 			column-span: all;
 		}
 	}
+
 	.requirements {
-		background: url(skyscraper1320.jpg) no-repeat top left;
+		background: url(skyscraper1320.jpg) no-repeat top center;
 		padding-top: 773px;
 		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
+
 		h3 {
 			column-span: all;
 		}
+
 		p {
 			&:last-child {
-				margin-top: 50px;
+				margin-top: 30px;
 				column-span: all;
+				padding-bottom: 0;
 			}
 		}
 	}
+
 	.explanation {
 		column-count: 2;
 		column-gap: 24px;
+
 		h3 {
 			column-span: all;
 		}
 	}
+
 	.main {
 		padding-left: 60px;
 		padding-right: 60px;
 	}
+
 	.intro {
 		padding-left: 60px;
 		padding-right: 60px;
 	}
+
 	.sidebar {
 		padding-left: 60px;
 		padding-right: 60px;
+		margin-bottom: 80px;
 	}
+
 	footer {
-		justify-content: flex-start;
-		padding-bottom: 20px;
-		a {
-			padding-right: 20px;
-		}
+		margin-left: -60px;
+		width: 1390px;
 	}
 }
