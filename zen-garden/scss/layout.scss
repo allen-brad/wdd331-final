@@ -1,79 +1,96 @@
-$color_1: white;
-$color_2: gray;
-$background_color_1: #E8E8E8;
-$background_color_2: blue;
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap');
+
+$white: #ffffff;
+$black: #000000;
+$light_gray: #F9F8F8;
+$dark_gray: #656565;
+$light_blue: #CCE0FF;
+$dark_blue: #0062FF;
+$a_link: rgba(0, 98, 255, 0.4);
+$a_hover: rgba(0, 98, 255, 0.7);
+$font_serif: 'IBM Plex Serif', serif;
+$font_sans: 'IBM Plex Sans', sans-serif;
 
 body {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	font-family: $font-sans;
 }
 
 .page-wrapper {
+	margin: 0 auto;
 	flex: 1 0 auto;
 	max-width: 375px;
 }
 
 .intro {
-	background-color: $background_color_1;
-	padding: 0 20px 20px 40px;
+	margin: 0 auto;
+	background-color: $light_gray;
+	padding: 3rem 1.5rem 1.5rem 3rem;
+	font-family: $font_serif;
+	font-size: 1rem;
+}
+
+.summary{
+	font-family: $font-sans;
 }
 
 .sidebar {
-	background-color: $background_color_1;
-	padding: 0 20px 20px 40px;
-	margin-bottom: 40px;
+	background-color: $light_gray;
+	padding: 1.5rem 1.5rem 1.5rem 3rem;
+	margin-bottom: 3rem;
 
 	h3 {
+		font-family: $font_serif;
 		font-size: 2.5em;
 		margin-bottom: 0;
 	}
 
-	.design-selection {
-		padding-left: 20px;
-		border-left: 3px solid blue;
-	}
-
-	.design-archives {
-		padding-left: 20px;
-		border-left: 3px solid blue;
-	}
-
-	.zen-resources {
-		padding-left: 20px;
-		border-left: 3px solid blue;
+	.design-selection, .design-archives, .zen-resources {
+		padding-left: 1.5rem;
+		border-left: 3px solid $dark_blue;
 	}
 
 	ul {
 		list-style-type: none;
 		padding: 0;
-		font-size: 1.6em;
-		margin-top: 10px;
+		font-size: 1.6rem;
+		margin-top: 1rem;
 	}
 }
 
 header {
 	h1 {
-		font-size: 6em;
-		margin-bottom: 0;
-		margin-top: 20px;
+		font-size: 5rem;
+		line-height: 95%;
+		margin-bottom: 1rem;
+		margin-top: 1.5rem;
 	}
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.5rem;
+	font-style: italic;
 	margin-top: 0;
 
 	abbr {
-		color: $color_1;
-		background: blue;
+		color: $white;
+		font-style: bold;
+		background: $dark_blue;
+		padding: 0 .8rem 0 .4rem;
+		margin-left: .5rem;
 	}
 }
 
+abbr {
+	text-decoration: none;
+}
+
 .summary {
-	color: $color_2;
-	font-size: 2em;
+	color: $dark_gray;
+	font-size: 1.75em;
 }
 
 .preamble {
@@ -88,7 +105,7 @@ h2 {
 		padding-bottom: 20px;
 		margin: 0;
 		padding-left: 20px;
-		border-left: 3px solid blue;
+		border-left: 3px solid $dark_blue;
 	}
 
 	p {
@@ -97,11 +114,50 @@ h2 {
 		padding-bottom: 20px;
 		margin: 0;
 		padding-left: 20px;
-		border-left: 3px solid blue;
+		border-left: 3px solid $dark_blue;
 
 		&:last-child {
 			padding-bottom: 0;
 		}
+	}
+}
+
+.intro, .main {
+	a:link {
+		color: $a_link;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	a:hover{
+		color: $a_hover;
+	}
+
+	a:active{
+		color: $a_hover;
+	}
+
+	a:visited{
+		color: $a_hover;
+	}
+}
+
+.main {
+	padding-left: 40px;
+	padding-right: 40px;
+
+	h3 {
+		font-family: $font_serif;
+		display: table;
+		background-color: $dark_blue;
+		line-height: 110%;
+		color: $white;
+		padding: 20px;
+		font-size: 2.3em;
+	}
+	p {
+		font-size: 1.6em;
+		padding-bottom: 30px;
 	}
 }
 
@@ -115,98 +171,82 @@ h2 {
 	h3 {
 		margin-left: 40px;
 		margin-right: 40px;
-		display: table;
-		background-color: $background_color_2;
-		color: $color_1;
-		padding: 20px;
-		font-size: 2.3em;
 	}
 
 	p {
 		margin-left: 40px;
 		margin-right: 40px;
-		font-size: 1.6em;
-		padding-bottom: 30px;
 	}
-}
-
-abbr {
-	text-decoration: none;
-}
-
-.main {
-	padding-left: 40px;
-	padding-right: 40px;
 }
 
 .participation {
 	background: url(jellyfish320.jpg) no-repeat top center;
 	padding-top: 193px;
 	margin-top: 15px;
-
-	h3 {
-		display: table;
-		background-color: $background_color_2;
-		color: $color_1;
-		padding: 20px;
-		font-size: 2.3em;
-	}
-
-	p {
-		font-size: 1.6em;
-		padding-bottom: 30px;
-	}
 }
 
 .requirements {
 	background: url(skyscraper320.jpg) no-repeat top center;
 	padding-top: 193px;
 	margin-top: 15px;
-
-	h3 {
-		display: table;
-		background-color: $background_color_2;
-		color: $color_1;
-		padding: 20px;
-		font-size: 2.3em;
-	}
-
-	p {
-		font-size: 1.6em;
-		padding-bottom: 30px;
-	}
 }
 
-.explanation {
-	h3 {
-		display: table;
-		background-color: $background_color_2;
-		color: $color_1;
-		padding: 20px;
-		font-size: 2.3em;
+h3.select{
+	font-family: $font_serif;
+}
+
+li a:first-child{
+	font-style: italic;
+}
+	
+li {
+	a:link{
+		color: $a_hover;
+		text-decoration: none;
+	}
+	
+	a:hover{
+		color: $dark_blue;
 	}
 
-	p {
-		font-size: 1.6em;
-		padding-bottom: 30px;
+	a:active{
+		color: $a_hover;
+	}
+
+	a:visited{
+		color: $dark_blue;
 	}
 }
 
 footer {
-	background-color: $background_color_2;
+	background-color: $dark_gray;
 	position: absolute;
 	display: flex;
 	justify-content: space-around;
 	margin-left: -40px;
 	padding: 15px 0 15px 50px;
 	bottom: 0;
-	width: 325px;
+	min-width: 325px;
+}
 
-	a {
-		color: $color_1;
+.main footer{
+	a:link {
+		color: $white;
 		font-size: 1.6em;
 		text-decoration: none;
 		margin-left: -40px;
+	}
+
+	a:hover{
+		color: $light_blue;
+	}
+
+	a:active{
+		color: $a_hover;
+	}
+
+	a:visited{
+		color: $light_blue;
 	}
 }
 
@@ -309,10 +349,9 @@ footer {
 	.sidebar {
 		padding-left: 60px;
 		padding-right: 60px;
-		margin-bottom: 80px;
 	}
 
-	footer {
+	.main footer {
 		margin-left: -60px;
 		width: 1390px;
 	}
