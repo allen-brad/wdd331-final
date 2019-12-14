@@ -4,237 +4,320 @@
 	- use multiple background images to apply as many as you need to any element
 	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
 	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.*/
-
-body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}  
-.page-wrapper {
-  flex: 1 0 auto;
-  max-width: 375px;
-}
-
-.intro,
-.sidebar {
-  background-color: #E8E8E8;
-  padding: 0 20px 20px 40px;
-}
-
-header h1 {
-  font-size: 6em;
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
-h2 {
-  font-size: 3em;
-  margin-top: 0;
-}
-
-h2 abbr {
-  color: white;
-  background: blue;
-}
-
-
-.summary {
-  color: gray;
-  font-size: 2em;
-}
-
-.preamble {
-  background: url(mountains400.jpg) no-repeat top left;
-  padding-top: 123px;
-  margin-left: -40px;
-  margin-right: -40px;
-}
-
-.benefits {
-  background: url(building400.jpg) no-repeat top left;
-  padding-top: 123px;
-  margin-top: 20px;
-  margin-left: -40px;
-  margin-right: -40px;
-}
-.benefits h3, .benefits p {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-
-.preamble h3,
-.sidebar h3 {
-  font-size: 2.5em;
-}
-
-abbr {
-  text-decoration: none;
-}
-
-.preamble p {
-  font-size: 1.7em;
-}
-
-.preamble h3,
-.preamble p {
-  padding-right: 10px;
-  padding-bottom: 20px;
-  margin: 0;
-}
-
-.preamble h3,
-.preamble p,
-.sidebar .design-selection,
-.sidebar .design-archives,
-.sidebar .zen-resources {
-  padding-left: 20px;
-  border-left: 3px solid blue;
-}
-
-.preamble p:last-child {
-  padding-bottom: 0;
-}
-
-.main {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.participation {
-  background: url(jellyfish320.jpg) no-repeat top center;
-  padding-top: 193px;
-  margin-top: 15px;
-}
-
-.requirements {
-  background: url(skyscraper320.jpg) no-repeat top center;
-  padding-top: 193px;
-  margin-top: 15px;
-}
-
-.explanation h3,
-.participation h3,
-.benefits h3,
-.requirements h3 {
-  display: table;
-  background-color: blue;
-  color: white;
-  padding: 20px;
-  font-size: 2.3em;
-}
-
-.explanation p,
-.participation p,
-.benefits p,
-.requirements p {
-  font-size: 1.6em;
-  padding-bottom: 30px;
-}
-.sidebar {
-  margin-bottom: 40px;
-}
-.sidebar h3 {
-  margin-bottom: 0;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.6em;
-  margin-top: 10px;
-}
-
-footer {
-  background-color: blue;
-  position: absolute;
-  display:flex;
-  justify-content: space-around;
-  margin-left: -40px;
-  padding: 15px 0 15px 50px;
-  bottom: 0;
-  width: 325px;
-}
-footer a {
-  color: white;
-  font-size: 1.6em;
-  text-decoration: none;
-  margin-left: -40px;
-}
-
-@media only screen and (min-width: 48em) {
+  @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap");
+  body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  
   .page-wrapper {
-    max-width: 1440px;
-  }
+    margin: 0 auto;
+    flex: 1 0 auto;
 
-  .preamble {
-    background: url(mountains1440.jpg) no-repeat top left;
-    padding-top: 426px;
-    margin-top: 20px;
-    margin-left: -60px;
-    margin-right: -60px;
   }
-
-  .benefits {
-    background: url(building1440.jpg) no-repeat top left;
-    padding-top: 426px;
-    margin-top: 20px;
-    margin-left: -60px;
-    margin-right: -60px;
+  .intro, .main, .sidebar {
+    max-width: 375px;
   }
-
-  .participation {
-    background: url(jellyfish1320.jpg) no-repeat top center;
-    padding-top: 773px;
-    margin-top: 20px;
+  .intro {
+    margin: 0 auto;
+    background-color: #F9F8F8;
+    padding: 3rem 1.5rem 1.5rem 3rem;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1rem;
   }
-
-  .requirements {
-    background: url(skyscraper1320.jpg) no-repeat top center;
-    padding-top: 773px;
-    margin-top: 20px;
+  
+  .summary {
+    font-family: "IBM Plex Sans", sans-serif;
   }
-
-  .benefits p {
-    padding-bottom: 160px;
-  }
-  .preamble h3, .preamble p, .benefits h3, .benefits p {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
-  .explanation,
-  .participation,
-  .benefits,
-  .requirements {
-    column-count: 2;
-    column-gap: 24px;
-  }
-
-  .explanation h3,
-  .participation h3,
-  .benefits h3,
-  .requirements h3 {
-    column-span: all;
-  }
-
-  .main,
-  .intro,
+  
   .sidebar {
-    padding-left: 60px;
-    padding-right: 60px;
+    background-color: #F9F8F8;
+    padding: 1.5rem 1.5rem 1.5rem .5rem;
+    margin-bottom: 3rem;
   }
-
-  .requirements p:last-child {
-    margin-top: 30px;
-    column-span: all;
+  .sidebar h3 {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+  .sidebar .design-selection, .sidebar .design-archives, .sidebar .zen-resources {
+    padding-left: 1rem;
+    border-left: 3px solid #0062FF;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  
+  header h1 {
+    font-size: 5rem;
+    line-height: 95%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-top: 0;
+  }
+  h2 abbr {
+    color: #ffffff;
+    font-style: bold;
+    background: #0062FF;
+    padding: 0 .8rem 0 .4rem;
+    margin-left: .5rem;
+  }
+  
+  abbr {
+    text-decoration: none;
+  }
+  
+  .summary {
+    color: #656565;
+    font-size: 1.75em;
+  }
+  
+  .preamble {
+    background: url(mountains400.jpg) no-repeat top center;
+    padding-top: 123px;
+    margin-left: -40px;
+    margin-right: -20px;
+  }
+  .preamble h3 {
+    font-size: 2.5em;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 20px;
+    border-left: 3px solid #0062FF;
+  }
+  .preamble p {
+    font-size: 1.7em;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 20px;
+    border-left: 3px solid #0062FF;
+  }
+  .preamble p:last-child {
     padding-bottom: 0;
   }
-  .sidebar {
-    margin-bottom: 80px;
+  
+  .intro a:link, .main a:link {
+    color: rgba(0, 98, 255, 0.4);
+    font-weight: bold;
+    text-decoration: none;
   }
+  .intro a:hover, .main a:hover {
+    color: rgba(0, 98, 255, 0.7);
+  }
+  .intro a:active, .main a:active {
+    color: rgba(0, 98, 255, 0.7);
+  }
+  .intro a:visited, .main a:visited {
+    color: rgba(0, 98, 255, 0.7);
+  }
+  
+  .main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .main h3 {
+    font-family: "IBM Plex Serif", serif;
+    display: table;
+    background-color: #0062FF;
+    line-height: 110%;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 2.3em;
+  }
+  .main p {
+    font-size: 1.6em;
+    padding-bottom: 30px;
+  }
+  
+  .benefits {
+    background: url(building400.jpg) no-repeat top center;
+    padding-top: 123px;
+    margin-top: 20px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .benefits h3 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .benefits p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .participation {
+    background: url(jellyfish320.jpg) no-repeat top center;
+    padding-top: 193px;
+    margin-top: 15px;
+  }
+  
+  .requirements {
+    background: url(skyscraper320.jpg) no-repeat top center;
+    padding-top: 193px;
+    margin-top: 15px;
+  }
+  
+  h3.select {
+    font-family: "IBM Plex Serif", serif;
+  }
+  .sidebar ul {
+    font-size: 1.5rem;
+  }
+  
+  li a:first-child {
+    font-style: italic;
+  }
+  
+  li a:link {
+    color: rgba(0, 98, 255, 0.7);
+    text-decoration: none;
+  }
+  li a:hover {
+    color: #0062FF;
+  }
+  li a:active {
+    color: rgba(0, 98, 255, 0.7);
+  }
+  li a:visited {
+    color: #0062FF;
+  }
+  
   footer {
-    margin-left: -60px;
-    width: 1390px;
-}
+    background-color: #656565;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -40px;
+    padding: 15px 0 15px 50px;
+    bottom: 0;
+    width: 325px;
+  }
+  
+  .main footer a:link {
+    color: #ffffff;
+    font-size: 1.6em;
+    text-decoration: none;
+    margin-left: -40px;
+  }
+  .main footer a:hover {
+    color: #CCE0FF;
+  }
+  .main footer a:active {
+    color: rgba(0, 98, 255, 0.7);
+  }
+  .main footer a:visited {
+    color: #CCE0FF;
+  }
+  
+  @media only screen and (min-width: 48em) {
+    .intro, .main, .sidebar {
+      max-width: 1440px;
+    }
+  
+    .preamble {
+      background: url(mountains1440.jpg) no-repeat top center;
+      padding-top: 426px;
+      margin-top: 20px;
+      margin-left: -60px;
+      margin-right: -60px;
+    }
+    .preamble h3 {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .preamble p {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  
+    .benefits {
+      background: url(building1440.jpg) no-repeat top center;
+      padding-top: 426px;
+      margin-top: 20px;
+      margin-left: -60px;
+      margin-right: -60px;
+      column-count: 2;
+      column-gap: 24px;
+    }
+    .benefits p {
+      padding-bottom: 160px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .benefits h3 {
+      margin-left: 60px;
+      margin-right: 60px;
+      column-span: all;
+    }
+  
+    .participation {
+      background: url(jellyfish1320.jpg) no-repeat top center;
+      padding-top: 773px;
+      margin-top: 20px;
+      column-count: 2;
+      column-gap: 24px;
+    }
+    .participation h3 {
+      column-span: all;
+    }
+  
+    .requirements {
+      background: url(skyscraper1320.jpg) no-repeat top center;
+      padding-top: 773px;
+      margin-top: 20px;
+      column-count: 2;
+      column-gap: 24px;
+    }
+    .requirements h3 {
+      column-span: all;
+    }
+    .requirements p:last-child {
+      margin-top: 30px;
+      column-span: all;
+      padding-bottom: 0;
+    }
+  
+    .explanation {
+      column-count: 2;
+      column-gap: 24px;
+    }
+    .explanation h3 {
+      column-span: all;
+    }
+  
+    .main {
+      padding-left: 60px;
+      padding-right: 60px;
+      max-width: 1440px;
+    }
+  
+    .intro {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  
+    .sidebar {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  
+    footer {
+      margin-left: -60px;
+      width: 1510px;
+
+    }
+  }
+  
