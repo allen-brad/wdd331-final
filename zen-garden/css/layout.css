@@ -324,8 +324,8 @@ a.designer-name::after {
     margin-top: 20px;
     -webkit-column-count: 2;
             column-count: 2;
-    -webkit-column-gap: 23px;
-            column-gap: 23px;
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
   }
   .participation h3 {
     -webkit-column-span: all;
@@ -354,8 +354,8 @@ a.designer-name::after {
   .explanation {
     -webkit-column-count: 2;
             column-count: 2;
-    -webkit-column-gap: 24px;
-            column-gap: 24px;
+    -webkit-column-gap: 23px;
+            column-gap: 23px;
   }
   .explanation h3 {
     -webkit-column-span: all;
