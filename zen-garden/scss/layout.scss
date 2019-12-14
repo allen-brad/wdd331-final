@@ -22,7 +22,6 @@ body {
 .page-wrapper {
 	margin: 0 auto;
 	flex: 1 0 auto;
-	max-width: 375px;
 }
 
 .intro {
@@ -39,7 +38,7 @@ body {
 
 .sidebar {
 	background-color: $light_gray;
-	padding: 1.5rem 1.5rem 1.5rem 3rem;
+	padding: 1.5rem 1.5rem 1.5rem .5rem;
 	margin-bottom: 3rem;
 
 	h3 {
@@ -49,7 +48,7 @@ body {
 	}
 
 	.design-selection, .design-archives, .zen-resources {
-		padding-left: 1.5rem;
+		padding-left: 1rem;
 		border-left: 3px solid $dark_blue;
 	}
 
@@ -94,7 +93,7 @@ abbr {
 }
 
 .preamble {
-	background: url(mountains400.jpg) no-repeat top left;
+	background: url(mountains400.jpg) no-repeat top center;
 	padding-top: 123px;
 	margin-left: -40px;
 	margin-right: -40px;
@@ -163,7 +162,7 @@ abbr {
 }
 
 .benefits {
-	background: url(building400.jpg) no-repeat top left;
+	background: url(building400.jpg) no-repeat top center;
 	padding-top: 123px;
 	margin-top: 20px;
 	margin-left: -40px;
@@ -228,7 +227,7 @@ footer {
 	margin-left: -40px;
 	padding: 15px 0 15px 50px;
 	bottom: 0;
-	min-width: 325px;
+	width: 325px;
 }
 
 .main footer{
@@ -271,12 +270,12 @@ a.designer-name {
 
 // large screen
 @media only screen and (min-width: 48em) {
-	.page-wrapper {
+	.intro, .main, .sidebar {
 		max-width: 1440px;
-	}
+	  }
 
 	.preamble {
-		background: url(mountains1440.jpg) no-repeat top left;
+		background: url(mountains1440.jpg) no-repeat top center;
 		padding-top: 426px;
 		margin-top: 20px;
 		margin-left: -60px;
@@ -294,7 +293,7 @@ a.designer-name {
 	}
 
 	.benefits {
-		background: url(building1440.jpg) no-repeat top left;
+		background: url(building1440.jpg) no-repeat top center;
 		padding-top: 426px;
 		margin-top: 20px;
 		margin-left: -60px;
@@ -359,6 +358,7 @@ a.designer-name {
 	.main {
 		padding-left: 60px;
 		padding-right: 60px;
+		max-width: 1440px;
 	}
 
 	.intro {
@@ -373,6 +373,6 @@ a.designer-name {
 
 	.main footer {
 		margin-left: -60px;
-		width: 1390px;
+		width: 1510px;
 	}
 }

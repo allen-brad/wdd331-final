@@ -17,7 +17,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  max-width: 375px;
 }
 
 .intro {
@@ -34,7 +33,7 @@ body {
 
 .sidebar {
   background-color: #F9F8F8;
-  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  padding: 1.5rem 1.5rem 1.5rem .5rem;
   margin-bottom: 3rem;
 }
 
@@ -45,7 +44,7 @@ body {
 }
 
 .sidebar .design-selection, .sidebar .design-archives, .sidebar .zen-resources {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   border-left: 3px solid #0062FF;
 }
 
@@ -87,7 +86,7 @@ abbr {
 }
 
 .preamble {
-  background: url(mountains400.jpg) no-repeat top left;
+  background: url(mountains400.jpg) no-repeat top center;
   padding-top: 123px;
   margin-left: -40px;
   margin-right: -40px;
@@ -151,12 +150,10 @@ abbr {
 .main p {
   font-size: 1.6em;
   padding-bottom: 30px;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
 }
 
 .benefits {
-  background: url(building400.jpg) no-repeat top left;
+  background: url(building400.jpg) no-repeat top center;
   padding-top: 123px;
   margin-top: 20px;
   margin-left: -40px;
@@ -221,7 +218,7 @@ footer {
   margin-left: -40px;
   padding: 15px 0 15px 50px;
   bottom: 0;
-  min-width: 325px;
+  width: 325px;
 }
 
 .main footer a:link {
@@ -243,43 +240,16 @@ footer {
   color: #CCE0FF;
 }
 
-.preamble {
-  -webkit-animation: fadeIn 5s;
-          animation: fadeIn 5s;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-a.designer-name::after {
-  content: url(external-link.svg);
-  padding-left: 3px;
-}
-
 @media only screen and (min-width: 48em) {
-  .page-wrapper {
+  .intro, .main, .sidebar {
     max-width: 1440px;
   }
   .preamble {
-    background: url(mountains400.jpg) no-repeat top center;
-    padding-top: 123px;
-    margin-left: -40px;
-    margin-right: -20px;
+    background: url(mountains1440.jpg) no-repeat top center;
+    padding-top: 426px;
+    margin-top: 20px;
+    margin-left: -60px;
+    margin-right: -60px;
   }
   .preamble h3 {
     margin-left: 60px;
@@ -290,8 +260,8 @@ a.designer-name::after {
     margin-right: 60px;
   }
   .benefits {
-    background: url(building400.jpg) no-repeat top center;
-    padding-top: 123px;
+    background: url(building1440.jpg) no-repeat top center;
+    padding-top: 426px;
     margin-top: 20px;
     margin-left: -60px;
     margin-right: -60px;
@@ -356,6 +326,7 @@ a.designer-name::after {
   .main {
     padding-left: 60px;
     padding-right: 60px;
+    max-width: 1440px;
   }
   .intro {
     padding-left: 60px;
@@ -367,7 +338,7 @@ a.designer-name::after {
   }
   .main footer {
     margin-left: -60px;
-    width: 1390px;
+    width: 1510px;
   }
 }
 /*# sourceMappingURL=layout.css.map */
