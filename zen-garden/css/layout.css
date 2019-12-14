@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap");
 body {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,13 +16,12 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  max-width: 375px;
 }
 
 .intro {
   margin: 0 auto;
   background-color: #F9F8F8;
-  padding: 3rem 1.5rem 1.5rem 3rem;
+  padding: 1rem 1rem 1rem 2rem;
   font-family: "IBM Plex Serif", serif;
   font-size: 1rem;
 }
@@ -34,7 +32,7 @@ body {
 
 .sidebar {
   background-color: #F9F8F8;
-  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  padding: 1.5rem 1.5rem 1.5rem .5rem;
   margin-bottom: 3rem;
 }
 
@@ -45,7 +43,7 @@ body {
 }
 
 .sidebar .design-selection, .sidebar .design-archives, .sidebar .zen-resources {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   border-left: 3px solid #0062FF;
 }
 
@@ -71,7 +69,7 @@ h2 {
 
 h2 abbr {
   color: #ffffff;
-  font-style: bold;
+  font-weight: bold;
   background: #0062FF;
   padding: 0 .8rem 0 .4rem;
   margin-left: .5rem;
@@ -87,27 +85,28 @@ abbr {
 }
 
 .preamble {
-  background: url(mountains400.jpg) no-repeat top left;
-  padding-top: 123px;
-  margin-left: -40px;
-  margin-right: -40px;
+  background: url(mountains400.jpg) no-repeat top center;
+  background-size: contain;
+  padding-top: 40%;
+  margin-left: -50px;
+  margin-right: -45px;
 }
 
 .preamble h3 {
   font-size: 2.5em;
-  padding-right: 10px;
+  padding-right: 30px;
   padding-bottom: 20px;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 30px;
   border-left: 3px solid #0062FF;
 }
 
 .preamble p {
   font-size: 1.7em;
-  padding-right: 10px;
+  padding-right: 30px;
   padding-bottom: 20px;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 30px;
   border-left: 3px solid #0062FF;
 }
 
@@ -151,16 +150,17 @@ abbr {
 .main p {
   font-size: 1.6em;
   padding-bottom: 30px;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
 }
 
 .benefits {
-  background: url(building400.jpg) no-repeat top left;
-  padding-top: 123px;
+  background: url(building400.jpg) no-repeat top center;
+  background-size: contain;
+  padding-top: 33%;
   margin-top: 20px;
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -50px;
+  margin-right: -45px;
 }
 
 .benefits h3 {
@@ -174,14 +174,16 @@ abbr {
 }
 
 .participation {
-  background: url(jellyfish320.jpg) no-repeat top center;
-  padding-top: 193px;
+  background: url(jellyfish320.jpg) no-repeat top left;
+  background-size: 80%;
+  padding-top: 45%;
   margin-top: 15px;
 }
 
 .requirements {
-  background: url(skyscraper320.jpg) no-repeat top center;
-  padding-top: 193px;
+  background: url(skyscraper320.jpg) no-repeat top left;
+  background-size: 80%;
+  padding-top: 45%;
   margin-top: 15px;
 }
 
@@ -218,17 +220,18 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: -40px;
   padding: 15px 0 15px 50px;
+  max-width: 1440px;
   bottom: 0;
-  min-width: 325px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .main footer a:link {
   color: #ffffff;
   font-size: 1.6em;
   text-decoration: none;
-  margin-left: -40px;
 }
 
 .main footer a:hover {
@@ -272,14 +275,16 @@ a.designer-name::after {
 }
 
 @media only screen and (min-width: 48em) {
-  .page-wrapper {
+  .intro, .main, .sidebar {
     max-width: 1440px;
   }
   .preamble {
-    background: url(mountains400.jpg) no-repeat top center;
-    padding-top: 123px;
-    margin-left: -40px;
-    margin-right: -20px;
+    background: url(mountains1440.jpg) no-repeat top center;
+    background-size: contain;
+    padding-top: 35%;
+    margin-top: 20px;
+    margin-left: -60px;
+    margin-right: -60px;
   }
   .preamble h3 {
     margin-left: 60px;
@@ -290,8 +295,9 @@ a.designer-name::after {
     margin-right: 60px;
   }
   .benefits {
-    background: url(building400.jpg) no-repeat top center;
-    padding-top: 123px;
+    background: url(building1440.jpg) no-repeat top center;
+    background-size: contain;
+    padding-top: 32%;
     margin-top: 20px;
     margin-left: -60px;
     margin-right: -60px;
@@ -301,7 +307,7 @@ a.designer-name::after {
             column-gap: 24px;
   }
   .benefits p {
-    padding-bottom: 160px;
+    padding-bottom: 80px;
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -312,8 +318,9 @@ a.designer-name::after {
             column-span: all;
   }
   .participation {
-    background: url(jellyfish1320.jpg) no-repeat top center;
-    padding-top: 773px;
+    background: url(jellyfish1320.jpg) no-repeat top left;
+    background-size: 75%;
+    padding-top: 45%;
     margin-top: 20px;
     -webkit-column-count: 2;
             column-count: 2;
@@ -325,8 +332,9 @@ a.designer-name::after {
             column-span: all;
   }
   .requirements {
-    background: url(skyscraper1320.jpg) no-repeat top center;
-    padding-top: 773px;
+    background: url(skyscraper1320.jpg) no-repeat top left;
+    background-size: 75%;
+    padding-top: 45%;
     margin-top: 20px;
     -webkit-column-count: 2;
             column-count: 2;
@@ -356,6 +364,7 @@ a.designer-name::after {
   .main {
     padding-left: 60px;
     padding-right: 60px;
+    max-width: 1440px;
   }
   .intro {
     padding-left: 60px;
@@ -364,10 +373,6 @@ a.designer-name::after {
   .sidebar {
     padding-left: 60px;
     padding-right: 60px;
-  }
-  .main footer {
-    margin-left: -60px;
-    width: 1390px;
   }
 }
 /*# sourceMappingURL=layout.css.map */

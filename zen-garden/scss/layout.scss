@@ -12,7 +12,6 @@ $font_serif: 'IBM Plex Serif', serif;
 $font_sans: 'IBM Plex Sans', sans-serif;
 
 body {
-	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -27,7 +26,7 @@ body {
 .intro {
 	margin: 0 auto;
 	background-color: $light_gray;
-	padding: 3rem 1.5rem 1.5rem 3rem;
+	padding: 1rem 1rem 1rem 2rem;
 	font-family: $font_serif;
 	font-size: 1rem;
 }
@@ -76,7 +75,7 @@ h2 {
 
 	abbr {
 		color: $white;
-		font-style: bold;
+		font-weight: bold;
 		background: $dark_blue;
 		padding: 0 .8rem 0 .4rem;
 		margin-left: .5rem;
@@ -94,25 +93,26 @@ abbr {
 
 .preamble {
 	background: url(mountains400.jpg) no-repeat top center;
-	padding-top: 123px;
-	margin-left: -40px;
-	margin-right: -40px;
+	background-size: contain;
+	padding-top: 40%;
+	margin-left: -50px;
+	margin-right: -45px;
 
 	h3 {
 		font-size: 2.5em;
-		padding-right: 10px;
+		padding-right: 30px;
 		padding-bottom: 20px;
 		margin: 0;
-		padding-left: 20px;
+		padding-left: 30px;
 		border-left: 3px solid $dark_blue;
 	}
 
 	p {
 		font-size: 1.7em;
-		padding-right: 10px;
+		padding-right: 30px;
 		padding-bottom: 20px;
 		margin: 0;
-		padding-left: 20px;
+		padding-left: 30px;
 		border-left: 3px solid $dark_blue;
 
 		&:last-child {
@@ -157,16 +157,17 @@ abbr {
 	p {
 		font-size: 1.6em;
 		padding-bottom: 30px;
-		margin-block-start: 0; //this is to make sure that the top of both columns match ~ Brad
+		margin-block-start: 0px; //this is to make sure that the top of both columns match ~ Brad
 	}
 }
 
 .benefits {
 	background: url(building400.jpg) no-repeat top center;
-	padding-top: 123px;
+	background-size: contain;
+	padding-top: 33%;
 	margin-top: 20px;
-	margin-left: -40px;
-	margin-right: -40px;
+	margin-left: -50px;
+	margin-right: -45px;
 
 	h3 {
 		margin-left: 40px;
@@ -180,15 +181,17 @@ abbr {
 }
 
 .participation {
-	background: url(jellyfish320.jpg) no-repeat top center;
-	padding-top: 193px;
+	background: url(jellyfish320.jpg) no-repeat top left;
+	background-size: 80%;
+	padding-top: 45%;
 	margin-top: 15px;
 }
 
 
 .requirements {
-	background: url(skyscraper320.jpg) no-repeat top center;
-	padding-top: 193px;
+	background: url(skyscraper320.jpg) no-repeat top left;
+	background-size: 80%;
+	padding-top: 45%;
 	margin-top: 15px;
 }
 
@@ -224,10 +227,12 @@ footer {
 	position: absolute;
 	display: flex;
 	justify-content: space-around;
-	margin-left: -40px;
 	padding: 15px 0 15px 50px;
+	max-width: 1440px;
 	bottom: 0;
-	width: 325px;
+	left:0;
+	right: 0;
+	margin: auto;
 }
 
 .main footer{
@@ -235,7 +240,6 @@ footer {
 		color: $white;
 		font-size: 1.6em;
 		text-decoration: none;
-		margin-left: -40px;
 	}
 
 	a:hover{
@@ -276,7 +280,8 @@ a.designer-name {
 
 	.preamble {
 		background: url(mountains1440.jpg) no-repeat top center;
-		padding-top: 426px;
+		background-size: contain;
+		padding-top: 35%;
 		margin-top: 20px;
 		margin-left: -60px;
 		margin-right: -60px;
@@ -294,7 +299,8 @@ a.designer-name {
 
 	.benefits {
 		background: url(building1440.jpg) no-repeat top center;
-		padding-top: 426px;
+		background-size: contain;
+		padding-top: 32%;
 		margin-top: 20px;
 		margin-left: -60px;
 		margin-right: -60px;
@@ -302,7 +308,7 @@ a.designer-name {
 		column-gap: 24px;
 
 		p {
-			padding-bottom: 160px;
+			padding-bottom: 80px;
 			margin-left: 60px;
 			margin-right: 60px;
 		}
@@ -315,8 +321,9 @@ a.designer-name {
 	}
 
 	.participation {
-		background: url(jellyfish1320.jpg) no-repeat top center;
-		padding-top: 773px;
+		background: url(jellyfish1320.jpg) no-repeat top left;
+		background-size: 75%;
+		padding-top: 45%;
 		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
@@ -327,8 +334,9 @@ a.designer-name {
 	}
 
 	.requirements {
-		background: url(skyscraper1320.jpg) no-repeat top center;
-		padding-top: 773px;
+		background: url(skyscraper1320.jpg) no-repeat top left;
+		background-size: 75%;
+		padding-top: 45%;
 		margin-top: 20px;
 		column-count: 2;
 		column-gap: 24px;
@@ -371,8 +379,4 @@ a.designer-name {
 		padding-right: 60px;
 	}
 
-	.main footer {
-		margin-left: -60px;
-		width: 1510px;
-	}
 }
