@@ -151,6 +151,11 @@ abbr {
 .main p {
   font-size: 1.6em;
   padding-bottom: 30px;
+<<<<<<< HEAD
+=======
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+>>>>>>> css-transitions-and-animations
 }
 
 .benefits {
@@ -246,7 +251,10 @@ footer {
           animation: fadeIn 5s;
 }
 
+<<<<<<< HEAD
 /* Standard syntax */
+=======
+>>>>>>> css-transitions-and-animations
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0.1;
@@ -255,6 +263,10 @@ footer {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> css-transitions-and-animations
 @keyframes fadeIn {
   from {
     opacity: 0.1;
@@ -264,6 +276,14 @@ footer {
   }
 }
 
+<<<<<<< HEAD
+=======
+a.designer-name::after {
+  content: url(external-link.svg);
+  padding-left: 3px;
+}
+
+>>>>>>> css-transitions-and-animations
 @media only screen and (min-width: 48em) {
   .page-wrapper {
     max-width: 1440px;
